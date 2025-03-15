@@ -1,0 +1,28 @@
+# 3.3 Korzystanie z dokumentacji języka Python – opis użytych elementów z programu zadanie1.py
+
+1. Funkcja wbudowana: zip()
+Opis:Funkcja `zip()` służy do łączenia elementów z dwóch (lub więcej) list w pary (krotki). W programie została wykorzystana do połączenia list `produkty` i `ceny`, tworząc listę par zawierających nazwę produktu i jego cenę.
+Przykład z programu:
+python
+lista_par = list(zip(produkty, ceny))
+
+Link do dokumentacji:** https://docs.python.org/3/library/functions.html#zip
+
+2. Moduł standardowy: random
+Opis: Moduł `random` umożliwia generowanie losowych wartości. W programie wykorzystano funkcję `random.uniform()`, która losuje liczbę zmiennoprzecinkową (rabat procentowy) z podanego przedziału.
+Przykład z programu:
+python
+znizka = random.uniform(5, 30)
+
+Link do dokumentacji:** https://docs.python.org/3/library/random.html#random.uniform
+
+## 3. Wyjątek: ValueError
+Opis:`ValueError` to wyjątek zgłaszany, gdy funkcja otrzyma poprawny typ argumentu, ale nieodpowiednią wartość. W programie obsłużono go w bloku `try-except`, gdy użytkownik poda dane wejściowe, które nie są liczbą.
+Przykład z programu:
+python
+try:
+    sztuki = int(input("Podaj liczbę sztuk każdego produktu: "))
+except ValueError:
+    print("Błąd: Podano nieprawidłową wartość (nie liczbę).")
+
+Link do dokumentacji: https://docs.python.org/3/library/exceptions.html#ValueError
