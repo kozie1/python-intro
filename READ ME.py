@@ -1,5 +1,5 @@
 # Zadanie 1 – Python
-# Autor: [Tutaj wpisz swoje imię i nazwisko]
+# Autor: [Dawid Kozioł]
 # Cel: użycie funkcji wbudowanej, modułu standardowego i obsługi wyjątku
 
 # Dokumentacja funkcji wbudowanej zip():
